@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Happy Eid Mubarak</title>
+  <meta name="description" content="Happy Eid Mubarak">
+  <meta property="og:title" content="Happy Eid Mubarak" />
+  <meta property="og:description" content="Happy Eid Mubarak">
+  <link rel="shortcut icon" type="image/x-icon" href="img/a.png">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- partial:index.partial.html -->
+  <div class="wrapper">
+    <div class="inner">
+    </div>
+    <h2 style="color: #01787E;">Happy Eid Mubaarok ✨<span id="jam">Loading...</span></h2>
+    <p>
+      <br>تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ كُلُّ عاَمٍ وَأَنْتُمْ بِخَيْرٍ
+      <br>
+      <br>Rival minta maaf kalau <br> ada salah yaa 🙏🏻
+      <!-- <br>Kita menerima THR <a href="payment.html" style="color:#F0C516">disini</a> 😋😍 -->
+      <br>Aku menerima semua jenis THR <a target="_blank" href="payment.html" style="color:#F0C516">DI SINI</a> kok 😋
+    </p>
+
+    <br>
+    <br>
+    <div class="sleeve">
+      <br>
+      <h2>Tap Here</h2>
+      <div class="circle"></div>
+      <img src="img/Card-Logo.png" class="dsa">
+      <h2 class="gsas">1444 H</h2>
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script>
+    setInterval(() => {
+      var jamna = new Date().toLocaleTimeString('en-US', { timeZone: "Asia/Jakarta" });
+      document.getElementById("jam").innerHTML = jamna
+    }, 1000);  
+  </script>
+
+</body>
+
+</html>
