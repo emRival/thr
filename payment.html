@@ -32,6 +32,14 @@
     <!-- Back Button -->
     <a href="javascript:history.back()" class="back-button">Back</a>
 
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Text copied successfully!</p>
+        </div>
+    </div>
+
     <script>
         function copyToClipboard(element) {
             var $temp = $("<input>");
@@ -39,7 +47,24 @@
             $temp.val($(element).text()).select();
             document.execCommand("copy");
             $temp.remove();
+            // Show success modal
+            var modal = document.getElementById("successModal");
+            modal.style.display = "block";
         }
+
+        // Close the modal when the user clicks on <span> (x)
+        $(".close").click(function () {
+            var modal = document.getElementById("successModal");
+            modal.style.display = "none";
+        });
+
+        // Close the modal when the user clicks anywhere outside of the modal
+        window.onclick = function (event) {
+            var modal = document.getElementById("successModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
     </script>
 </body>
 
