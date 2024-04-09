@@ -31,7 +31,7 @@
     </div>
 
     <!-- Back Button -->
-    <a href="javascript:history.back()" class="back-button">Back</a>
+    <a onclick="closeWindow()" class="back-button">Back</a>
 
     <script>
         function copyToClipboard(element) {
@@ -48,6 +48,10 @@
                 timer: 1500,
                 showConfirmButton: false
             });
+        }
+
+           function closeWindow() {
+            window.close();
         }
     </script>
 </body>
